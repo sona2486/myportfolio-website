@@ -129,3 +129,84 @@ footer {
     padding: 30px;
   }
 }
+/* ===== SKILLS SECTION ===== */
+.skills {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skill {
+  margin-top: 25px;
+}
+
+.skill span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.progress {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  animation: loadBar 2s ease forwards;
+}
+
+/* Skill Levels */
+.progress-bar.html {
+  width: 95%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+.progress-bar.css {
+  width: 90%;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+}
+
+.progress-bar.js {
+  width: 80%;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+.progress-bar.react {
+  width: 75%;
+  background: linear-gradient(90deg, #61dafb, #007acc);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes loadBar {
+  from {
+    width: 0;
+  }
+}
+
+/* Fade-in animation */
+section {
+  animation: fadeUp 1.2s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover glow effect */
+.project-card:hover {
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.6);
+}
+
